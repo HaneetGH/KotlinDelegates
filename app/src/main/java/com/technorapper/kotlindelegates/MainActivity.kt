@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity(), AnalyticLogger by AnalyticLoggerImp(),
         println("Hello")
         4
     }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,7 +21,6 @@ class MainActivity : AppCompatActivity(), AnalyticLogger by AnalyticLoggerImp(),
         println(obj)
         println(obj1)
     }
-
     override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
         handleDeepLink(intent)
