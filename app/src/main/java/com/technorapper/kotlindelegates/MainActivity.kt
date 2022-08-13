@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity(), AnalyticLogger by AnalyticLoggerImp(),
 
     private val obj by lazy {
         println("Hello")
-        3
+        55
     }
 
     private val obj1 by MyLazy {
