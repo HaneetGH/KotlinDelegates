@@ -5,8 +5,7 @@ interface MyInterface {
     fun foo() = "foo"
 }
 
-@JvmInline
-value class MyInterfaceWrapper(val myInterface: MyInterface) : MyInterface by myInterface
+class MyInterfaceWrapper(val myInterface: MyInterface) : MyInterface by myInterface
 
 fun inlineWithDeligate() {
     val my = MyInterfaceWrapper(object : MyInterface {
